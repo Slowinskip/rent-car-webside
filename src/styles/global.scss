@@ -1,0 +1,10 @@
+@import "./settings.scss";
+@import url("https://fonts.googleapis.com/css2?family=Signika&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  font-family: "Signika", sans-serif;
+}

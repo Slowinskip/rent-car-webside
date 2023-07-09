@@ -10,8 +10,8 @@ const Header = () => {
         <Navbar.Brand className="d-flex">
           <FaCarAlt className={styles.navLogo} />
           <div className={styles.navTitle}>
-            <span>Rent</span>
-            <span>Car</span>
+            <span className={styles.spanRent}>Rent</span>
+            <span className={styles.spanCar}>Car</span>
           </div>
         </Navbar.Brand>
         <NavbarCollapse className={"justify-content-center " + styles.navLink}>
@@ -21,8 +21,12 @@ const Header = () => {
           <a href="">Contact</a>
         </NavbarCollapse>
         <div className={styles.navBnt}>
-          <button className="styles.loginBnt">Login</button>
-          <button className="styles.registerBnt">Register</button>
+          <button href="" className={styles.loginBnt}>
+            Login
+          </button>
+          <button href="" className={styles.registerBnt}>
+            Register
+          </button>
         </div>
       </Container>
     </Navbar>

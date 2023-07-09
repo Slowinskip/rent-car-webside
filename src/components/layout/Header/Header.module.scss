@@ -1,9 +1,50 @@
+@import "../../../styles/settings.scss";
+@import "../../../styles/global.scss";
+
 .navLogo {
-  color: #ff3f34;
+  color: $base-red;
   font-size: 4rem;
 }
 .navTitle {
-  color: #ff3f34;
+  color: $base-black;
   display: flex;
   flex-direction: column;
+
+  .spanRent {
+    font-weight: 900;
+    color: $base-red;
+  }
+  .spanCar {
+    letter-spacing: 0.4rem;
+  }
+}
+.navLink {
+  a {
+    font-size: 1.2rem;
+    color: $base-black;
+    text-decoration: none;
+    margin: 0 1rem;
+    // transition: 1s linear;
+
+    &:hover {
+      color: $base-red;
+      font-weight: 700;
+      border-bottom: 3px solid $base-red;
+    }
+  }
+}
+
+.navBnt {
+  font-size: 1rem;
+  .loginBnt,
+  .registerBnt {
+    padding: 15px 25px;
+    font-weight: 600;
+    border: none;
+    background-color: transparent;
+  }
+  .registerBnt {
+    background-color: $base-red;
+    color: white;
+  }
 }
