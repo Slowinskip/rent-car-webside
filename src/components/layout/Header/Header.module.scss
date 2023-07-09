@@ -48,3 +48,13 @@
     color: white;
   }
 }
+.dropDown {
+}
+.dropItem {
+  text-align: center;
+
+  &:hover {
+    color: $base-red;
+    background: transparent;
+  }
+}
