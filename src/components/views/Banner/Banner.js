@@ -15,7 +15,7 @@ const Banner = () => {
 
   return (
     <div className={styles.container}>
-      <div className={"col col-md-5 " + styles.banerText}>
+      <div className={"col col-md-6 " + styles.banerText}>
         <h4>Plan your trip now</h4>
         <h1 className={styles.bannerTitle}>
           Save <span>big</span> with our car rental
@@ -29,7 +29,7 @@ const Banner = () => {
           </button>
         </div>
       </div>
-      <div className={"col col-md-5 " + styles.banerImage}>
+      <div className={"col col-md-6 " + styles.banerImage}>
         <img alt="img" src={carImage}></img>
       </div>
     </div>
