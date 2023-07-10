@@ -1,2 +1,44 @@
 @import "../../../styles/settings.scss";
 @import "../../../styles/global.scss";
+
+.container {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+}
+.banerText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  button,
+  h4,
+  h1 {
+    font-weight: 800;
+    span {
+      color: $base-red;
+    }
+  }
+  .bannerTitle {
+    font-size: 3rem;
+  }
+  button {
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    margin-right: 10px;
+    border: none;
+    color: $white;
+  }
+  .btnBook {
+    background-color: $base-red;
+  }
+  .btnLern {
+    background-color: $base-black;
+  }
+}
+
+.banerImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

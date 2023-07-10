@@ -8,7 +8,6 @@ import { RiMenuFoldFill } from "react-icons/ri";
 const Header = () => {
   const [width, setWidth] = useState(window.innerWidth);
   const [mobileMenu, setmobileMenu] = useState(false);
-  console.log(mobileMenu);
   window.addEventListener("resize", (e) => {
     setWidth(window.innerWidth);
   });
