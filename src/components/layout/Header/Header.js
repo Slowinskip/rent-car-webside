@@ -4,13 +4,14 @@ import { Container, Dropdown, DropdownButton, Navbar } from "react-bootstrap";
 import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";
 import { FaCarAlt } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { RiMenuFoldFill } from "react-icons/ri";
 const Header = () => {
   const [width, setWidth] = useState(window.innerWidth);
+  const [mobileMenu, setmobileMenu] = useState(false);
+  console.log(mobileMenu);
   window.addEventListener("resize", (e) => {
     setWidth(window.innerWidth);
   });
-
-  console.log(width);
 
   return (
     <Navbar>
@@ -42,32 +43,24 @@ const Header = () => {
             </div>
           </>
         ) : (
-          <DropdownButton
-            title={<GiHamburgerMenu />}
-            id={`dropdown-button-down`}
-            drop="start"
-            variant="secondary"
-            className={styles.dropDown}
-          >
-            <Dropdown.Item className={styles.dropItem} href="#/action-1">
-              Home
-            </Dropdown.Item>
-            <Dropdown.Item className={styles.dropItem} href="#/action-2">
-              About
-            </Dropdown.Item>
-            <Dropdown.Item className={styles.dropItem} href="#/action-3">
-              Vehicle
-            </Dropdown.Item>
-            <Dropdown.Item className={styles.dropItem} href="#/action-3">
-              Contact
-            </Dropdown.Item>
-            <Dropdown.Item className={styles.dropItem} href="#/action-3">
-              Login
-            </Dropdown.Item>
-            <Dropdown.Item className={styles.dropItem} href="#/action-3">
-              Register
-            </Dropdown.Item>
-          </DropdownButton>
+          <>
+            <button
+              onClick={() => setmobileMenu(!mobileMenu)}
+              className={styles.btnMobileMenu}
+            >
+              {mobileMenu ? <RiMenuFoldFill /> : <GiHamburgerMenu />}
+            </button>
+            {mobileMenu ? (
+              <div className={"col-4 " + styles.mobileMenu}>
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Vehicle</a>
+                <a href="">Contact</a>
+              </div>
+            ) : (
+              ""
+            )}
+          </>
         )}
       </Container>
     </Navbar>

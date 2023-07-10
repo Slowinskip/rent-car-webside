@@ -48,13 +48,34 @@
     color: white;
   }
 }
-.dropDown {
-}
-.dropItem {
-  text-align: center;
 
-  &:hover {
-    color: $base-red;
-    background: transparent;
+.btnMobileMenu {
+  color: $base-red;
+  font-size: 2rem;
+  background-color: transparent;
+  padding: 6px 10px;
+  border-radius: 10px;
+  border-color: $base-red;
+}
+
+.mobileMenu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-color: 1px solid $base-red;
+
+  a {
+    display: block;
+    padding: 5px 0;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid $base-red;
+
+    &:hover {
+      color: $base-red;
+    }
   }
 }
