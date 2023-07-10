@@ -1,39 +1,73 @@
 @import "../../../styles/settings.scss";
 @import "../../../styles/global.scss";
 
+* {
+  margin: 0;
+  padding: 0;
+}
 .container {
-  height: 80vh;
   display: flex;
   justify-content: center;
+  flex-direction: row;
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    height: auto;
+  }
 }
 .banerText {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  button,
-  h4,
+  @media (max-width: 800px) {
+    padding: 35px 35px 0 35px;
+  }
+
+  h4 {
+    @media (max-width: 500px) {
+      font-size: 1.3rem;
+    }
+  }
   h1 {
-    font-weight: 800;
     span {
       color: $base-red;
     }
   }
   .bannerTitle {
     font-size: 3rem;
+    @media (max-width: 500px) {
+      font-size: 2.3rem;
+    }
   }
-  button {
-    padding: 15px 25px;
-    font-size: 1.2rem;
-    margin-right: 10px;
-    border: none;
-    color: $white;
-  }
-  .btnBook {
-    background-color: $base-red;
-  }
-  .btnLern {
-    background-color: $base-black;
+  .btnDiv {
+    display: flex;
+
+    button {
+      font-weight: 800;
+
+      padding: 15px 25px;
+      font-size: 1.2rem;
+      border: none;
+      color: $white;
+      @media (max-width: 500px) {
+        font-size: 1rem;
+        padding: 5px 10px;
+        display: inline-block;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      justify-content: space-around;
+    }
+
+    .btnBook {
+      background-color: $base-red;
+    }
+    .btnLern {
+      background-color: $base-black;
+    }
   }
 }
 
@@ -41,4 +75,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 500px) {
+    transform: scale(0.6);
+  }
 }
