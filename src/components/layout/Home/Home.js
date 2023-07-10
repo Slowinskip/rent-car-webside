@@ -1,7 +1,13 @@
 import React from "react";
+import { Container } from "react-bootstrap";
+import Banner from "../../views/Banner/Banner";
 
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <Container>
+      <Banner />
+    </Container>
+  );
 };
 
 export default Home;
