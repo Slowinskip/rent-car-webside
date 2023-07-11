@@ -1,2 +1,63 @@
 @import "../../../styles/settings.scss";
 @import "../../../styles/global.scss";
+
+.modelContainer {
+  padding: 70px 0;
+  border-bottom: 2px solid #d2dae2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .modelsTitle {
+    text-align: center;
+    h3 {
+      font-weight: 800;
+    }
+  }
+  .modelInfo {
+    padding: 25px 0;
+  }
+  .modelDetail {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    .modelImg {
+      display: flex;
+      transform: scale(0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modelInfo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modelPrice {
+      background-color: $base-red;
+      color: $white;
+      max-width: 80%;
+      h5 {
+        font-size: 1.5rem;
+      }
+      span {
+        font-weight: 800;
+        font-size: 2rem;
+        margin-right: 15px;
+      }
+    }
+
+    .modelSpec {
+      display: flex;
+      justify-content: center;
+
+      div {
+        border: 1px solid $base-black;
+        padding: 5px 5px;
+        min-width: 40%;
+      }
+    }
+  }
+}
