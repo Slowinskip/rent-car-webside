@@ -23,7 +23,7 @@ const BookForm = () => {
     };
   };
   return (
-    <>
+    <div className={styles.bookContainer}>
       <h3 id="bookCar" className={"col-12 " + styles.bookTitle}>
         Book a car
       </h3>{" "}
@@ -83,7 +83,7 @@ const BookForm = () => {
           </Col>
         </Row>{" "}
       </Form>
-    </>
+    </div>
   );
 };
 

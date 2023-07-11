@@ -1,6 +1,10 @@
 @import "../../../styles/settings.scss";
 @import "../../../styles/global.scss";
 
+.bookContainer {
+  padding: 70px 0;
+  border-bottom: 2px solid #d2dae2;
+}
 .btnBook {
   display: flex;
   justify-content: center;
