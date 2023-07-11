@@ -21,12 +21,12 @@ const Banner = () => {
           Save <span>big</span> with our car rental
         </h1>
         <div className={styles.btnDiv}>
-          <button className={styles.btnBook}>
+          <a href="#bookCar" className={styles.btnBook}>
             Book Ride <CiCircleCheck />
-          </button>
-          <button className={styles.btnLern}>
+          </a>
+          <a className={styles.btnLern}>
             Lern More <BsArrowRightShort />
-          </button>
+          </a>
         </div>
       </div>
       <div className={"col col-md-6 " + styles.banerImage}>

@@ -1,22 +1,43 @@
 import React, { useState } from "react";
 import styles from "./BookForm.module.scss";
-import { Button, Col, Form, Row } from "react-bootstrap";
+import { Alert, Button, Col, Form, Row } from "react-bootstrap";
 const BookForm = () => {
   const [car, setCar] = useState("merc");
   const [city, setCity] = useState("Warszawa");
   const [startDate, setStartDate] = useState();
   const [endDate, setendDate] = useState();
+  const [error, setError] = useState(false);
 
   const handleSubmit = (e) => {
+    console.log(startDate);
+    console.log(error);
+    if (!startDate || !endDate || startDate > endDate) {
+      setError(true);
+    }
     e.preventDefault();
-    console.log(car);
+    const data = {
+      car: car,
+      city: city,
+      startDate: startDate,
+      endDate: endDate,
+    };
   };
   return (
     <>
-      {" "}
-      <h3 className={"col-12 " + styles.bookTitle}>Book a car</h3>{" "}
+      <h3 id="bookCar" className={"col-12 " + styles.bookTitle}>
+        Book a car
+      </h3>{" "}
       <Form onSubmit={handleSubmit}>
         <Row>
+          {error === true && (
+            <Alert variant="danger" className="mt-3">
+              <Alert.Heading>Something is wrong!</Alert.Heading>
+              <p>
+                The date has not been selected or the pick-up date cannot be
+                before the start date
+              </p>
+            </Alert>
+          )}
           <Col className="col-12 col-md-6 col-lg-4">
             <Form.Group>
               <Form.Label>Select a car type</Form.Label>
