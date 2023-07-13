@@ -5,4 +5,48 @@
   padding: 70px 0;
   border-bottom: 2px solid #d2dae2;
   border-top: 2px solid #d2dae2;
+
+  .opinionTitle {
+    text-align: center;
+    h3 {
+      font-weight: 900;
+    }
+  }
+
+  .opinionBox {
+    padding: 4rem 0;
+    @media (max-width: 770px) {
+      :nth-child(2) {
+        margin-top: 1rem;
+      }
+    }
+
+    .opinionBox_col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      p {
+        min-height: 150px;
+      }
+      img,
+      h4,
+      .opinionIcon {
+        margin: 0px 15px;
+      }
+      .opinionAuthorDiv {
+        display: flex;
+        align-items: center;
+        img {
+          border-radius: 100%;
+          height: 60px;
+          width: 60px;
+        }
+        .opinionIcon {
+          font-size: 3rem;
+          color: $base-red;
+        }
+      }
+    }
+  }
 }
