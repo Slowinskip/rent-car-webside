@@ -21,6 +21,23 @@
     align-items: center;
     justify-content: center;
 
+    .switchCarBtn {
+      border: none;
+      background-color: transparent;
+      font-size: 1.5rem;
+      width: 200px;
+      padding: 10px 20px;
+
+      &:hover {
+        background-color: $base-red;
+        color: $white;
+      }
+      &:focus {
+        background-color: $base-red;
+        color: $white;
+      }
+    }
+
     .modelImg {
       display: flex;
       transform: scale(0.8);

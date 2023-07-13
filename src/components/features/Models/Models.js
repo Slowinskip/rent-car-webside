@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Models.module.scss";
 import { Col, Form, Row } from "react-bootstrap";
 import { useSelector } from "react-redux";
 
 const Models = () => {
   const cars = useSelector((store) => store.cars.car);
+
+  const [showCar, setshowCar] = useState(cars[0]);
+  console.log(showCar);
   return (
     <Row className={styles.modelContainer}>
       <div className={"col-7 " + styles.modelsTitle}>
@@ -19,21 +22,23 @@ const Models = () => {
         <Col className={"col-12 col-md-6 col-lg-4 " + styles.modelBtn}>
           {cars.map((car) => (
             <Col>
-              <button>{car.model}</button>
+              <button
+                className={styles.switchCarBtn}
+                onClick={() => setshowCar(car)}
+              >
+                {car.model}
+              </button>
             </Col>
           ))}
         </Col>
         <Col className={"col-12 col-md-6 col-lg-4 " + styles.modelImg}>
           {" "}
-          <img
-            alt="img"
-            src="./image/mb-e-class-4d-blue-2021_preview_rev_1.png"
-          ></img>
+          <img alt="img" src={showCar.image}></img>
         </Col>
         <Col className={"col-12 col-md-6 col-lg-4 " + styles.modelInfo}>
           <Col className={"col-12 " + styles.modelPrice}>
             <h5>
-              <span>$</span> / per day
+              <span>${showCar.cost}</span> / per day
             </h5>
           </Col>
           <Col className={"col-12 " + styles.modelSpec}>
@@ -41,7 +46,7 @@ const Models = () => {
               <h5>Model:</h5>
             </div>
             <div>
-              <h5>?</h5>
+              <h5>{showCar.model}</h5>
             </div>
           </Col>
           <Col className={"col-12 " + styles.modelSpec}>
@@ -49,7 +54,7 @@ const Models = () => {
               <h5>Mark:</h5>
             </div>
             <div>
-              <h5>?</h5>
+              <h5>{showCar.mark}</h5>
             </div>
           </Col>
           <Col className={"col-12 " + styles.modelSpec}>
@@ -57,7 +62,7 @@ const Models = () => {
               <h5>Year:</h5>
             </div>
             <div>
-              <h5>?</h5>
+              <h5>{showCar.year}</h5>
             </div>
           </Col>
           <Col className={"col-12 " + styles.modelSpec}>
@@ -65,7 +70,7 @@ const Models = () => {
               <h5>Chest</h5>
             </div>
             <div>
-              <h5>?</h5>
+              <h5>{showCar.transmission}</h5>
             </div>
           </Col>
         </Col>
