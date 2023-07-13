@@ -11,7 +11,7 @@ const Models = () => {
   return (
     <Row className={styles.modelContainer}>
       <div className={"col-7 " + styles.modelsTitle}>
-        <h4>Vehicle Models</h4>
+        <h4 id="vehicle">Vehicle Models</h4>
         <h3>Get to know our cars</h3>
         <p>
           In the interests of your safety, we check the technical condition of
@@ -75,6 +75,9 @@ const Models = () => {
           </Col>
         </Col>
       </Row>
+      <a href="#bookCar" className={"col-3 " + styles.reservedBtn}>
+        RESERVE NOW
+      </a>
     </Row>
   );
 };

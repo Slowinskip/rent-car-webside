@@ -28,8 +28,8 @@ const Header = () => {
               className={"justify-content-center " + styles.navLink}
             >
               <a href="">Home</a>
-              <a href="">About</a>
-              <a href="">Vehicle</a>
+              <a href="#about">About</a>
+              <a href="#vehicle">Vehicle</a>
               <a href="">Contact</a>
             </NavbarCollapse>
             <div className={styles.navBnt}>
@@ -53,7 +53,7 @@ const Header = () => {
               <div className={"col-4 " + styles.mobileMenu}>
                 <a href="">Home</a>
                 <a href="">About</a>
-                <a href="">Vehicle</a>
+                <a href="#vehicle">Vehicle</a>
                 <a href="">Contact</a>
               </div>
             ) : (

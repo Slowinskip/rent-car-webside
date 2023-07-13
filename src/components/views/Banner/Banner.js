@@ -24,7 +24,7 @@ const Banner = () => {
           <a href="#bookCar" className={styles.btnBook}>
             Book Ride <CiCircleCheck />
           </a>
-          <a className={styles.btnLern}>
+          <a href="#about" className={styles.btnLern}>
             Lern More <BsArrowRightShort />
           </a>
         </div>

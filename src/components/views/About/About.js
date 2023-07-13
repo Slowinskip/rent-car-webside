@@ -6,7 +6,7 @@ import { GiChoice } from "react-icons/gi";
 
 const About = () => {
   return (
-    <Row className={styles.aboutContainer}>
+    <Row id="about" className={styles.aboutContainer}>
       <Col className={"col-12 " + styles.aboutTitleDiv}>
         <h4>Plan your trip!</h4>
         <h3>It's never been easier!</h3>
