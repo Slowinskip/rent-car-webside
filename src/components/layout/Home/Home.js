@@ -5,6 +5,7 @@ import BookForm from "../../features/BookForm/BookForm";
 import About from "../../views/About/About";
 import Models from "../../features/Models/Models";
 import { Details } from "../../views/Details/Details";
+import { Opinion } from "../../views/Opinion/Opinion";
 
 const Home = () => {
   return (
@@ -16,6 +17,9 @@ const Home = () => {
         <Models />
       </Container>
       <Details />
+      <Container>
+        <Opinion />
+      </Container>
     </>
   );
 };
