@@ -3,9 +3,92 @@
 
 .detailContainer {
   padding: 70px 0;
-  border-bottom: 2px solid #d2dae2;
 
   .titleDiv {
     background-color: black;
+    padding: 2rem 0;
+    text-align: center;
+    h1 {
+      font-weight: 900;
+      color: $white;
+    }
+    h4 {
+      color: $white;
+      span {
+        color: $base-red;
+      }
+    }
+  }
+
+  .imageDiv {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+
+    @media (max-width: 500px) {
+      padding: 0 0;
+    }
+
+    img {
+      transform: scale(0.7);
+
+      @media (max-width: 650px) {
+        transform: scale(0.5);
+      }
+      @media (max-width: 500px) {
+        transform: scale(0.3);
+      }
+    }
+    .imageDiv_col {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .centerImg {
+      z-index: 99;
+      position: absolute;
+      align-items: center;
+      //   top: 30%;
+    }
+  }
+
+  .textDetailContainer {
+    justify-content: center;
+    align-items: center;
+
+    .textCol_1 {
+      padding: 4rem;
+      h5,
+      h4 {
+        font-weight: 900;
+      }
+    }
+    .textCol_2 {
+      .textCol_2__ {
+        display: flex;
+        @media (max-width: 350px) {
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+
+        .icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: $base-red;
+          font-size: 3.5rem;
+        }
+        .description {
+          padding: 1rem 0;
+
+          h5 {
+            font-weight: 600;
+          }
+        }
+      }
+    }
   }
 }
