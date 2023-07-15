@@ -1,9 +1,41 @@
 @import "../../../styles/settings.scss";
 @import "../../../styles/global.scss";
 
+.container {
+  padding-top: 70px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+
+  .mobileText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+      font-weight: 900;
+    }
+    p {
+      margin: 1rem 0;
+    }
+    .mobileText_iconBox {
+      color: $base-red;
+      font-size: 2rem;
+      .icon {
+        margin-right: 1rem;
+      }
+    }
+  }
+}
 .mobileImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   img {
     height: 400px;
     width: 400px;
+    @media (max-width: 350px) {
+      height: 300px;
+      width: 300px;
+    }
   }
 }
