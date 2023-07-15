@@ -11,4 +11,27 @@
       font-weight: 900;
     }
   }
+
+  .questions {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .questionBox {
+      width: 60%;
+      h5 {
+        margin: 0;
+        padding: 1rem;
+        background-color: $base-red;
+        color: $white;
+        font-weight: 900;
+      }
+      p {
+        border: 2px solid $base-red;
+        padding: 1rem;
+      }
+    }
+  }
 }
