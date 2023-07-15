@@ -7,6 +7,7 @@ import Models from "../../features/Models/Models";
 import { Details } from "../../views/Details/Details";
 import { Opinion } from "../../views/Opinion/Opinion";
 import FAQ from "../../views/FAQ/FAQ";
+import MobileApp from "../../views/MobileApp/MobileApp";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
       <Container>
         <Opinion />
         <FAQ />
+        <MobileApp />
       </Container>
     </>
   );
