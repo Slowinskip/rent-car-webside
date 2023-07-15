@@ -6,6 +6,7 @@ import About from "../../views/About/About";
 import Models from "../../features/Models/Models";
 import { Details } from "../../views/Details/Details";
 import { Opinion } from "../../views/Opinion/Opinion";
+import FAQ from "../../views/FAQ/FAQ";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <Details />
       <Container>
         <Opinion />
+        <FAQ />
       </Container>
     </>
   );
