@@ -7,7 +7,7 @@ import { MdEmail } from "react-icons/md";
 const Footer = () => {
   return (
     <Container>
-      <Row xs={1} md={2} lg={4}>
+      <Row className={styles.row} xs={1} md={2} lg={4}>
         <Col className={styles.footerBox}>
           <h5>RENT CAR</h5>
           <p>
@@ -41,7 +41,7 @@ const Footer = () => {
           <h5>SUBSCRIPTION</h5>
           <p>Subscribe your Email address for latest news & updates</p>
           <input type="email"></input>
-          <button>1</button>
+          <button>Submit</button>
         </Col>
       </Row>
     </Container>

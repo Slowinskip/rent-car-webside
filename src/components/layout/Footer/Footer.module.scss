@@ -1,13 +1,29 @@
-.d {
-  background-color: black;
+@import "../../../styles/settings.scss";
+@import "../../../styles/global.scss";
+
+.row {
+  border-top: 2px solid #d2dae2;
+
+  padding: 70px 0;
 }
 
 .footerBox {
-  ul {
-    li {
-      text-decoration: none;
-      margin: 0;
-      padding: 0;
-    }
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  h5,
+  h6 {
+    font-weight: 900;
+  }
+  .footerBox_icon {
+    margin-right: 1rem;
+  }
+
+  button {
+    border: none;
+    background-color: $base-red;
+    color: $white;
+    margin-top: 1rem;
+    padding: 3px 1.5px;
   }
 }
