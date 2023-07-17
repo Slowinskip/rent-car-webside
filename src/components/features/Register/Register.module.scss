@@ -1,2 +1,42 @@
 @import "../../../styles/settings.scss";
 @import "../../../styles/global.scss";
+
+.container {
+  padding: 70px 0;
+  border-top: 2px solid #d2dae2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .registerDiv {
+    padding: 30px 20px;
+    border: 1px solid $base-red;
+    border-top-right-radius: 25%;
+    display: flex;
+    flex-direction: column;
+
+    h4 {
+      color: $base-red;
+      font-weight: 900;
+    }
+
+    .registerForm {
+      margin-top: 1rem;
+    }
+
+    .registerBtnDiv {
+      margin: 2rem 0;
+      display: flex;
+      justify-content: space-around;
+
+      .registerBtn {
+        border: none;
+        background-color: $base-red;
+        text-decoration: none;
+        color: $white;
+        font-weight: 900;
+        padding: 20px 30px;
+      }
+    }
+  }
+}
