@@ -27,18 +27,18 @@ const Header = () => {
             <NavbarCollapse
               className={"justify-content-center " + styles.navLink}
             >
-              <a href="">Home</a>
+              <a href="/">Home</a>
               <a href="#about">About</a>
               <a href="#vehicle">Vehicle</a>
-              <a href="">Contact</a>
+              <a href="/">Contact</a>
             </NavbarCollapse>
             <div className={styles.navBnt}>
-              <button href="" className={styles.loginBnt}>
+              <a href="/login" className={styles.loginBnt}>
                 Login
-              </button>
-              <button href="" className={styles.registerBnt}>
+              </a>
+              <a href="/register" className={styles.registerBnt}>
                 Register
-              </button>
+              </a>
             </div>
           </>
         ) : (

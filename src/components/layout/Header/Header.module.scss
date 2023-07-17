@@ -39,9 +39,13 @@
   .loginBnt,
   .registerBnt {
     padding: 15px 25px;
-    font-weight: 600;
+    font-weight: 800;
     border: none;
     background-color: transparent;
+    text-decoration: none;
+  }
+  .loginBnt {
+    color: $base-red;
   }
   .registerBnt {
     background-color: $base-red;
