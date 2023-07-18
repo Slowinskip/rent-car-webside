@@ -5,6 +5,7 @@ import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";
 import { FaCarAlt } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RiMenuFoldFill } from "react-icons/ri";
+import { AiOutlineClose } from "react-icons/ai";
 const Header = () => {
   const [width, setWidth] = useState(window.innerWidth);
   const [mobileMenu, setmobileMenu] = useState(false);
@@ -47,19 +48,23 @@ const Header = () => {
               onClick={() => setmobileMenu(!mobileMenu)}
               className={styles.btnMobileMenu}
             >
-              {mobileMenu ? <RiMenuFoldFill /> : <GiHamburgerMenu />}
+              <GiHamburgerMenu />
             </button>
-            {mobileMenu ? (
-              <div className={"col-4 " + styles.mobileMenu}>
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="#vehicle">Vehicle</a>
-                <a href="">Contact</a>
-              </div>
-            ) : (
-              ""
-            )}
           </>
+        )}
+        {mobileMenu ? (
+          <div className={"col-12 " + styles.mobileMenu}>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="#vehicle">Vehicle</a>
+            <a href="">Contact</a>
+
+            <a onClick={() => setmobileMenu(!mobileMenu)}>
+              <AiOutlineClose className={styles.iconExit} />
+            </a>
+          </div>
+        ) : (
+          ""
         )}
       </Container>
     </Navbar>
