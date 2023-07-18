@@ -1,2 +1,56 @@
 @import "../../../styles/settings.scss";
 @import "../../../styles/global.scss";
+.container {
+  padding: 70px 0;
+  border-top: 2px solid #d2dae2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .contactImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      transform: scale(0.9);
+      @media (max-width: 1200px) {
+        transform: scale(0.7);
+      }
+      @media (max-width: 1000px) {
+        transform: scale(0.6);
+      }
+    }
+  }
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    align-items: center;
+    h4 {
+      font-weight: 900;
+      color: $base-red;
+    }
+    .contactInput {
+      width: 80%;
+    }
+    .contactInput_select {
+      width: 80%;
+      margin-top: 1rem;
+      text-align: center;
+    }
+    .contactInput_textarea {
+      width: 80%;
+      height: 5rem;
+    }
+    button {
+      margin-top: 1rem;
+      width: 50%;
+      padding: 0.6rem 0;
+      border: none;
+      background-color: $base-red;
+      color: $white;
+      font-weight: 900;
+      font-size: 1.2rem;
+    }
+  }
+}
