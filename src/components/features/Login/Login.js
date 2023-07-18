@@ -12,10 +12,7 @@ const Login = () => {
         {error === true && (
           <Alert variant="danger" className="mt-3">
             <Alert.Heading>Something is wrong!</Alert.Heading>
-            <p>
-              The date has not been selected or the pick-up date cannot be
-              before the start date
-            </p>
+            <p>Sorry, this option doesn't work yet </p>
           </Alert>
         )}
 

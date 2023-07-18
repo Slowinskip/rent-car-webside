@@ -30,7 +30,7 @@ const Header = () => {
               <a href="/">Home</a>
               <a href="#about">About</a>
               <a href="#vehicle">Vehicle</a>
-              <a href="/">Contact</a>
+              <a href="/contact">Contact</a>
             </NavbarCollapse>
             <div className={styles.navBnt}>
               <a href="/login" className={styles.loginBnt}>
