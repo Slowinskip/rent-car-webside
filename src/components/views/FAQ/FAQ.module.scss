@@ -21,6 +21,10 @@
 
     .questionBox {
       width: 60%;
+      @media (max-width: 600px) {
+        width: 80%;
+      }
+
       h5 {
         margin: 0;
         padding: 1rem;

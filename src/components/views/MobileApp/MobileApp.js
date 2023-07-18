@@ -6,7 +6,7 @@ const MobileApp = () => {
   return (
     <div className={styles.container}>
       <Row xs={1} md={2}>
-        <Col className={"col-3 " + styles.mobileText}>
+        <Col className={"col-12 col-md-6 " + styles.mobileText}>
           <h2>Get to know our application</h2>
           <p>
             In a ante dapibus, tempus urna eget, egestas eros. Quisque pulvinar
@@ -19,7 +19,7 @@ const MobileApp = () => {
             <BsGooglePlay className={styles.icon} />
           </div>
         </Col>
-        <Col className={styles.mobileImage}>
+        <Col className={"col-12 col-md-6 " + styles.mobileImage}>
           <img alt="img" src="./image/MobileBackground2.png"></img>
         </Col>
       </Row>

@@ -13,7 +13,7 @@ const FAQ = () => {
         </p>
       </div>
       <div className={styles.questions}>
-        <Col className={styles.questionBox}>
+        <div className={styles.questionBox}>
           <h5>
             Can I return the car in other places than at the company's
             headquarters?
@@ -24,7 +24,7 @@ const FAQ = () => {
             hendrerit metus. Morbi condimentum orci ac est convallis hendrerit.
             Mauris malesuada erat tellus.
           </p>
-        </Col>
+        </div>
         <Col className={styles.questionBox}>
           <h5>When will the funds be debited from my account?</h5>
           <p>
