@@ -20,7 +20,10 @@ const MobileApp = () => {
           </div>
         </Col>
         <Col className={"col-12 col-md-6 " + styles.mobileImage}>
-          <img alt="img" src="./image/MobileBackground2.png"></img>
+          <img
+            alt="img"
+            src="https://i.ibb.co/RvbvKYK/Mobile-Background2.png"
+          ></img>
         </Col>
       </Row>
     </div>

@@ -17,15 +17,15 @@ export const Details = () => {
         <div className={styles.imageDiv}>
           <img
             className={styles.centerImg}
-            src="./image/jeep2.png"
+            src="https://i.ibb.co/KND7mKH/jeep2.png"
             alt="img"
           ></img>
 
           <Col className={"col-5 " + styles.imageDiv_col}>
-            <img src="./image/audi.png" alt="img"></img>
+            <img src="https://i.ibb.co/0F418Hw/audi.png" alt="img"></img>
           </Col>
           <Col className={"col-5 " + styles.imageDiv_col}>
-            <img src="./image/merc.png" alt="img"></img>
+            <img src="https://i.ibb.co/7RgnQ2m/merc.png" alt="img"></img>
           </Col>
         </div>
         <Row xs={1} md={2} className={styles.textDetailContainer}>

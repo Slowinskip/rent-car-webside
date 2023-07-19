@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import styles from "./Models.module.scss";
-import { Col, Form, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import { useSelector } from "react-redux";
 
 const Models = () => {
   const cars = useSelector((store) => store.cars.car);
 
   const [showCar, setshowCar] = useState(cars[0]);
-  console.log(showCar);
   return (
     <Row className={styles.modelContainer}>
       <div className={"col-7 " + styles.modelsTitle}>
@@ -21,7 +20,7 @@ const Models = () => {
       <Row className={" " + styles.modelDetail}>
         <Col className={"col-12 col-md-6 col-lg-4 " + styles.modelBtn}>
           {cars.map((car) => (
-            <Col>
+            <Col key={car.id}>
               <button
                 className={styles.switchCarBtn}
                 onClick={() => setshowCar(car)}

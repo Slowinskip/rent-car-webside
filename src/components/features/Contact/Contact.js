@@ -37,7 +37,10 @@ const Contact = () => {
           <button onClick={() => setError(!error)}>Submit</button>
         </Col>
         <Col className={"col-12 col-md-4 " + styles.contactImg}>
-          <img alt="img" src="./image/peugeot-3008-suv-blue-2021.png"></img>
+          <img
+            alt="img"
+            src="https://i.ibb.co/rpKN17Q/peugeot-3008-suv-blue-2021.png"
+          ></img>
         </Col>
       </Row>
     </Container>

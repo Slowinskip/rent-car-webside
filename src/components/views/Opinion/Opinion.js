@@ -25,7 +25,7 @@ export const Opinion = () => {
             Aliquam eget ultrices nunc.
           </p>
           <div className={styles.opinionAuthorDiv}>
-            <img src="./image/person2.jpg" alt="img"></img>
+            <img src="https://i.ibb.co/ZHbr5h2/person2.jpg" alt="img"></img>
             <h4>Adam Smidth</h4>
             <BsFillChatDotsFill className={styles.opinionIcon} />
           </div>
@@ -41,7 +41,7 @@ export const Opinion = () => {
             </p>
           </div>
           <div className={styles.opinionAuthorDiv}>
-            <img src="./image/person1.jpg" alt="img"></img>
+            <img src="https://i.ibb.co/qBkM3zc/person1.jpg" alt="img"></img>
             <h4>Samanta Dyson</h4>
             <BsFillChatDotsFill className={styles.opinionIcon} />
           </div>

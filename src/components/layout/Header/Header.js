@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import styles from "./Header.module.scss";
-import { Container, Dropdown, DropdownButton, Navbar } from "react-bootstrap";
+import { Container, Navbar } from "react-bootstrap";
 import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";
 import { FaCarAlt } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { RiMenuFoldFill } from "react-icons/ri";
 import { AiOutlineClose } from "react-icons/ai";
 const Header = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -28,9 +27,9 @@ const Header = () => {
             <NavbarCollapse
               className={"justify-content-center " + styles.navLink}
             >
-              <a href="/">Home</a>
-              <a href="#about">About</a>
-              <a href="#vehicle">Vehicle</a>
+              <a href="/CarRent">Home</a>
+              <a href="CarRent#about">About</a>
+              <a href="CarRent#vehicle">Vehicle</a>
               <a href="/contact">Contact</a>
             </NavbarCollapse>
             <div className={styles.navBnt}>
@@ -54,10 +53,10 @@ const Header = () => {
         )}
         {mobileMenu ? (
           <div className={"col-12 " + styles.mobileMenu}>
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="#vehicle">Vehicle</a>
-            <a href="">Contact</a>
+            <a href="/CarRent">Home</a>
+            <a href="CarRent#about">About</a>
+            <a href="CarRent#vehicle">Vehicle</a>
+            <a href="/contact">Contact</a>
 
             <a onClick={() => setmobileMenu(!mobileMenu)}>
               <AiOutlineClose className={styles.iconExit} />

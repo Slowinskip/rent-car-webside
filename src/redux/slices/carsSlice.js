@@ -8,7 +8,8 @@ const initialState = {
       year: "2020",
       transmission: "Automatic",
       cost: "200",
-      image: "./image/mb-e-class-4d-blue-2021_preview_rev_1.png",
+      image:
+        "https://i.ibb.co/Khcqyzh/mb-e-class-4d-blue-2021-preview-rev-1.png",
       id: 0,
     },
     {
@@ -17,7 +18,7 @@ const initialState = {
       year: "2018",
       transmission: "Automatic",
       cost: "150",
-      image: "./image/peugeot-3008-suv-blue-2021.png",
+      image: "https://i.ibb.co/rpKN17Q/peugeot-3008-suv-blue-2021.png",
       id: 1,
     },
     {
@@ -26,7 +27,7 @@ const initialState = {
       year: "2021",
       transmission: "Manual",
       cost: "210",
-      image: "./image/skoda-kamiq-suv-black-2021.png",
+      image: "https://i.ibb.co/zN6B79t/skoda-kamiq-suv-black-2021.png",
       id: 2,
     },
     {
@@ -35,7 +36,8 @@ const initialState = {
       year: "2022",
       transmission: "Automatic",
       cost: "250",
-      image: "./image/hyundai-elantra-4d-schwarz-2017_preview_rev_1.png",
+      image:
+        "https://i.ibb.co/Bs92v7Z/hyundai-elantra-4d-schwarz-2017-preview-rev-1.png",
 
       id: 3,
     },
