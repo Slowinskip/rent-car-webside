@@ -27,9 +27,9 @@ const Header = () => {
             <NavbarCollapse
               className={"justify-content-center " + styles.navLink}
             >
-              <a href="/CarRent">Home</a>
-              <a href="CarRent#about">About</a>
-              <a href="CarRent#vehicle">Vehicle</a>
+              <a href="/rent-car-webside">Home</a>
+              <a href="rent-car-webside#about">About</a>
+              <a href="rent-car-webside#vehicle">Vehicle</a>
               <a href="/contact">Contact</a>
             </NavbarCollapse>
             <div className={styles.navBnt}>
@@ -53,10 +53,27 @@ const Header = () => {
         )}
         {mobileMenu ? (
           <div className={"col-12 " + styles.mobileMenu}>
-            <a href="/CarRent">Home</a>
-            <a href="CarRent#about">About</a>
-            <a href="CarRent#vehicle">Vehicle</a>
-            <a href="/contact">Contact</a>
+            <a
+              onClick={() => setmobileMenu(!mobileMenu)}
+              href="/rent-car-webside"
+            >
+              Home
+            </a>
+            <a
+              onClick={() => setmobileMenu(!mobileMenu)}
+              href="rent-car-webside#about"
+            >
+              About
+            </a>
+            <a
+              onClick={() => setmobileMenu(!mobileMenu)}
+              href="rent-car-webside#vehicle"
+            >
+              Vehicle
+            </a>
+            <a onClick={() => setmobileMenu(!mobileMenu)} href="/contact">
+              Contact
+            </a>
 
             <a onClick={() => setmobileMenu(!mobileMenu)}>
               <AiOutlineClose className={styles.iconExit} />
