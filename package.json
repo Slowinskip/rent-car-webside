@@ -1,5 +1,4 @@
 {
-  "homepage": "http://slowinskip.github.io/rent-car-webside",
   "name": "rent-car-webside",
   "version": "0.1.0",
   "private": true,
@@ -50,5 +49,7 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+    
   }
+  
 }

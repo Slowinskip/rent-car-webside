@@ -27,9 +27,9 @@ const Header = () => {
             <NavbarCollapse
               className={"justify-content-center " + styles.navLink}
             >
-              <a href="/rent-car-webside">Home</a>
-              <a href="rent-car-webside#about">About</a>
-              <a href="rent-car-webside#vehicle">Vehicle</a>
+              <a href="/">Home</a>
+              <a href="#about">About</a>
+              <a href="#vehicle">Vehicle</a>
               <a href="/contact">Contact</a>
             </NavbarCollapse>
             <div className={styles.navBnt}>
@@ -53,22 +53,13 @@ const Header = () => {
         )}
         {mobileMenu ? (
           <div className={"col-12 " + styles.mobileMenu}>
-            <a
-              onClick={() => setmobileMenu(!mobileMenu)}
-              href="/rent-car-webside"
-            >
+            <a onClick={() => setmobileMenu(!mobileMenu)} href="/">
               Home
             </a>
-            <a
-              onClick={() => setmobileMenu(!mobileMenu)}
-              href="rent-car-webside#about"
-            >
+            <a onClick={() => setmobileMenu(!mobileMenu)} href="#about">
               About
             </a>
-            <a
-              onClick={() => setmobileMenu(!mobileMenu)}
-              href="rent-car-webside#vehicle"
-            >
+            <a onClick={() => setmobileMenu(!mobileMenu)} href="#vehicle">
               Vehicle
             </a>
             <a onClick={() => setmobileMenu(!mobileMenu)} href="/contact">
