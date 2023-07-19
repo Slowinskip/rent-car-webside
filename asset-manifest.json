@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/rent-car-webside/static/css/main.2a5ecc26.css",
+    "main.js": "/rent-car-webside/static/js/main.55a04872.js",
+    "static/js/787.3bd18e11.chunk.js": "/rent-car-webside/static/js/787.3bd18e11.chunk.js",
+    "index.html": "/rent-car-webside/index.html",
+    "main.2a5ecc26.css.map": "/rent-car-webside/static/css/main.2a5ecc26.css.map",
+    "main.55a04872.js.map": "/rent-car-webside/static/js/main.55a04872.js.map",
+    "787.3bd18e11.chunk.js.map": "/rent-car-webside/static/js/787.3bd18e11.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2a5ecc26.css",
+    "static/js/main.55a04872.js"
+  ]
+}
