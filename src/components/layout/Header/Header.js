@@ -65,6 +65,12 @@ const Header = () => {
             <a onClick={() => setmobileMenu(!mobileMenu)} href="/contact">
               Contact
             </a>
+            <a onClick={() => setmobileMenu(!mobileMenu)} href="/login">
+              Login
+            </a>
+            <a onClick={() => setmobileMenu(!mobileMenu)} href="/register">
+              Register
+            </a>
 
             <a onClick={() => setmobileMenu(!mobileMenu)}>
               <AiOutlineClose className={styles.iconExit} />
